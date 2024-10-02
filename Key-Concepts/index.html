@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Key-Concepts | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="What is a Kernel?The Kernel is the core component of an operating system that manages system resources and allows software applications to interact with hardware. It bridges the hardware (like CPU, me">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Key-Concepts">
+<meta property="og:url" content="http://example.com/Key-Concepts/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="What is a Kernel?The Kernel is the core component of an operating system that manages system resources and allows software applications to interact with hardware. It bridges the hardware (like CPU, me">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/user-attachments/assets/007fc28c-0100-4f59-87e9-1fcd52d55998">
+<meta property="article:published_time" content="2024-10-01T10:27:24.000Z">
+<meta property="article:modified_time" content="2024-10-02T15:20:30.723Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/user-attachments/assets/007fc28c-0100-4f59-87e9-1fcd52d55998">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/Key-Concepts/index.html" class="article-date">
+  <time class="dt-published" datetime="2024-10-01T10:27:24.000Z" itemprop="datePublished">2024-10-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Key-Concepts
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="What-is-a-Kernel"><a href="#What-is-a-Kernel" class="headerlink" title="What is a Kernel?"></a>What is a Kernel?</h2><p>The <strong>Kernel</strong> is the core component of an operating system that manages system resources and allows software applications to interact with hardware. It bridges the hardware (like CPU, memory, and devices) and the software applications running on a computer.</p>
+<ul>
+<li><p><strong>Responsibilities</strong>: The kernel handles essential tasks like process management, memory management, device drivers, and system calls.</p>
+</li>
+<li><p><strong>Types of Kernels</strong>: Common types include monolithic kernels (e.g., Linux) and microkernels.</p>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=xsHRCnmxLT8"><em><img src="https://github.com/user-attachments/assets/007fc28c-0100-4f59-87e9-1fcd52d55998" alt="kernel"></em></a></p>
+<blockquote>
+</blockquote>
+<h2 id="Thread-Threading"><a href="#Thread-Threading" class="headerlink" title="Thread&#x2F;Threading"></a>Thread&#x2F;Threading</h2><ul>
+<li>A thread is a sequence of programmed instructions that the CPU executes. Threading refers to managing multiple threads simultaneously, allowing different parts of a program to run concurrently, improving efficiency and performance.</li>
+</ul>
+<h2 id="Single-threaded"><a href="#Single-threaded" class="headerlink" title="Single-threaded"></a>Single-threaded</h2><ul>
+<li>A programming approach where a single sequence of instructions (thread) is executed one at a time. This means only one task runs at any given moment, and the program cannot perform multiple tasks simultaneously.</li>
+</ul>
+<h3 id="Single-threaded-Example"><a href="#Single-threaded-Example" class="headerlink" title="Single-threaded Example"></a>Single-threaded Example</h3><ul>
+<li><p>Imagine a coffee shop where only one barista works on orders sequentially. The barista takes one order, prepares the coffee, serves it to the customer, and then moves on to the next order. </p>
+</li>
+<li><p><strong>How it Works:</strong> Each coffee order is processed one after the other. The next order starts only after the current one finishes.</p>
+</li>
+</ul>
+<h2 id="Multi-threading"><a href="#Multi-threading" class="headerlink" title="Multi-threading"></a>Multi-threading</h2><ul>
+<li><strong>Multi-threading</strong> is a programming technique that allows multiple threads (smaller units of a process) to run concurrently within a single process, sharing the same resources like memory and data. Each thread can perform a different task at the same time, improving the efficiency and performance of applications, especially those that involve complex or time-consuming operations.</li>
+</ul>
+<h3 id="Multi-threaded-Example"><a href="#Multi-threaded-Example" class="headerlink" title="Multi-threaded Example"></a>Multi-threaded Example</h3><ul>
+<li><p>Now imagine the same coffee shop but with three baristas working simultaneously. Each barista can handle a separate order at the same time, making the overall process faster.</p>
+</li>
+<li><p><strong>How it Works:</strong> Each thread handles an order independently, allowing multiple orders to be processed simultaneously. The coffee shop serves customers faster because tasks are run concurrently.</p>
+</li>
+</ul>
+<h2 id="Parallelization"><a href="#Parallelization" class="headerlink" title="Parallelization"></a>Parallelization</h2><ul>
+<li><strong>Parallelization</strong> refers to splitting a task into smaller sub-tasks that can be executed simultaneously on multiple processors or cores, speeding up the overall computation. A common real-world example is cooking a meal where multiple people handle different tasks at the same time: one person chops vegetables, another boils water, and a third cooks the meat.</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/Key-Concepts/index.html" data-id="cm1s0la8n0005egp26mzp68ko" data-title="Key-Concepts" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/10/02/index/">🛸 UFO-JA373</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
