@@ -12,3 +12,5 @@ The original content for this project can be found in the following GitHub repos
 - **Responsive Design**: The template ensures the website is accessible and user-friendly across various devices.
 - **Markdown Support**: Content can be easily written and organized using Markdown, allowing for quick updates and modifications.
 
+
+
