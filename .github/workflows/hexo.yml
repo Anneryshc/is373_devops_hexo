@@ -19,7 +19,7 @@ jobs:
       - name: Set Up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Usa la versión de Node.js que necesitas
+          node-version: '20'  # Usa la versión de Node.js que necesitas
 
       - name: Install Hexo and Dependencies
         run: |
