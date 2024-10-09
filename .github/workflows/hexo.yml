@@ -14,17 +14,22 @@ jobs:
 
     steps:
       - name: Checkout Hexo Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Set Up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: '20'  # Usa la versión de Node.js que necesitas
 
       - name: Install Hexo and Dependencies
         run: |
           npm install -g hexo-cli
           npm install
+
+      - name: Install Playwright and Browsers
+        run: |
+          npm install playwright
+          npx playwright install  # Asegura que los navegadores estén instalados
 
       - name: Generate Hexo Site
         run: hexo generate
@@ -34,19 +39,6 @@ jobs:
           git clone https://github.com/jar285/is373_devops.git
           cd is373_devops/tests
           npm install
-
-      # Force reinstall Playwright Browsers without caching issues
-      - name: Clean Playwright Cache
-        run: rm -rf /home/runner/.cache/ms-playwright  # Clear previous browser installs
-
-      - name: Install Playwright Browsers
-        run: |
-          echo "Installing Playwright browsers with dependencies"
-          npx playwright install --with-deps --force  # Force reinstallation
-
-      # Verify that Playwright browsers are installed correctly
-      - name: Verify Playwright Browser Installation
-        run: ls /home/runner/.cache/ms-playwright
 
       - name: Execute Playwright Tests
         run: |
@@ -60,17 +52,20 @@ jobs:
 
     steps:
       - name: Checkout Hexo Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Set Up Node.js for Deployment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: '21'
 
       - name: Install Hexo and Dependencies for Deployment
         run: |
           npm install -g hexo-cli
           npm install
+
+      - name: Install Playwright Browsers for Deployment
+        run: npx playwright install  # Asegúrate que los navegadores estén instalados para el despliegue
 
       - name: Regenerate Hexo Site
         run: hexo generate
