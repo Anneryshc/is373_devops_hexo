@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Devops
+title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: Annerys Hernandez and Jesus rosario 
+author: John Doe
 language: en
 timezone: ''
 
@@ -101,6 +101,4 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://github.com/Anneryshc/is373_devops_hexo.git
-  branch: gh-pages
+  type: ''

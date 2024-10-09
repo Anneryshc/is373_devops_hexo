@@ -19,7 +19,7 @@ jobs:
       - name: Set Up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '21'  # Usa la versión de Node.js que necesitas
+          node-version: '16'  # Usa la versión de Node.js que necesitas
 
       - name: Install Hexo and Dependencies
         run: |
@@ -66,8 +66,6 @@ jobs:
       - name: Regenerate Hexo Site
         run: hexo generate
 
-      - name: Disable Jekyll
-        run: echo > ./public/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
