@@ -35,13 +35,23 @@ jobs:
           cd is373_devops/tests
           npm install
 
-      # Clear Playwright Cache (this ensures clean browser installation)
+      # Clean Playwright Cache (ensure no old cache files are causing issues)
       - name: Clean Playwright Cache
         run: rm -rf /home/runner/.cache/ms-playwright
 
-      # Install Playwright Browsers with dependencies (re-install the browsers)
+      # Install Playwright Browsers with dependencies (reinstall the browsers)
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: |
+          echo "Installing Playwright browsers"
+          npx playwright install --with-deps
+          echo "Playwright browsers installed"
+
+      # Debugging step to verify the installation was successful
+      - name: Verify Playwright Browser Installation
+        run: |
+          echo "Checking installed browsers"
+          ls /home/runner/.cache/ms-playwright
+          npx playwright install  # This checks if any installation issues remain
 
       - name: Execute Playwright Tests
         run: |
@@ -75,6 +85,12 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+
+
+
+
+
+
 
 
 
