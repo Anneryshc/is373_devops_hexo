@@ -38,6 +38,9 @@ jobs:
           cd is373_devops/tests
           npm install
 
+      - name: Clear Playwright Cache
+        run: rm -rf ~/.cache/ms-playwright
+
       - name: Install Playwright Browsers
         run: npx playwright install
 
