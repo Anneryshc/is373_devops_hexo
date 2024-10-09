@@ -23,9 +23,13 @@ jobs:
         with:
           node-version: '20'  # Specify the Node.js version
 
+      # Clean Hexo cache and files
+      - name: Clean Hexo cache and files
+        run: npx hexo clean
+
       # Install dependencies for Hexo
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       # Generate the static Hexo site
       - name: Generate Hexo site
@@ -81,9 +85,13 @@ jobs:
         with:
           node-version: '20'  # Specify the Node.js version
 
+      # Clean Hexo cache and files
+      - name: Clean Hexo cache and files
+        run: npx hexo clean
+
       # Install dependencies for Hexo
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       # Generate the static Hexo site for deployment
       - name: Generate Hexo site
