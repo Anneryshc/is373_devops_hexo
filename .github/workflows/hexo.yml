@@ -14,12 +14,12 @@ jobs:
 
     steps:
       - name: Checkout Hexo Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Updated to v4
 
       - name: Set Up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4  # Updated to v4
         with:
-          node-version: '16'  # Usa la versión de Node.js que necesitas
+          node-version: '20'  # Updated Node.js to version 20
 
       - name: Install Hexo and Dependencies
         run: |
@@ -51,12 +51,12 @@ jobs:
 
     steps:
       - name: Checkout Hexo Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Updated to v4
 
       - name: Set Up Node.js for Deployment
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4  # Updated to v4
         with:
-          node-version: '21'
+          node-version: '20'  # Use Node.js 20 for deployment
 
       - name: Install Hexo and Dependencies for Deployment
         run: |
@@ -71,5 +71,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-
 
