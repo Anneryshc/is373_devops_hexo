@@ -14,12 +14,12 @@ jobs:
 
     steps:
       - name: Checkout Hexo Repository
-        uses: actions/checkout@v4  # Updated to v4
+        uses: actions/checkout@v4
 
       - name: Set Up Node.js
-        uses: actions/setup-node@v4  # Updated to v4
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'  # Updated Node.js to version 20
+          node-version: '20'
 
       - name: Install Hexo and Dependencies
         run: |
@@ -39,6 +39,10 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
+      # Verify browser installation
+      - name: Verify Playwright Browser Installation
+        run: npx playwright show-browser
+
       - name: Execute Playwright Tests
         run: |
           cd is373_devops/tests
@@ -51,12 +55,12 @@ jobs:
 
     steps:
       - name: Checkout Hexo Repository
-        uses: actions/checkout@v4  # Updated to v4
+        uses: actions/checkout@v4
 
       - name: Set Up Node.js for Deployment
-        uses: actions/setup-node@v4  # Updated to v4
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'  # Use Node.js 20 for deployment
+          node-version: '20'
 
       - name: Install Hexo and Dependencies for Deployment
         run: |
