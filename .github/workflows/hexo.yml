@@ -23,13 +23,19 @@ jobs:
         with:
           node-version: '20'  # Specify the Node.js version
 
+      # Remove node_modules and force install dependencies
+      - name: Clean and Install Dependencies
+        run: |
+          rm -rf node_modules  # Remove existing node_modules to avoid conflicts
+          npm install --force  # Force install all dependencies
+
+      # Install Hexo globally (ensures Hexo commands are available)
+      - name: Install Hexo globally
+        run: npm install -g hexo-cli
+
       # Clean Hexo cache and files
       - name: Clean Hexo cache and files
         run: npx hexo clean
-
-      # Install dependencies for Hexo
-      - name: Install dependencies
-        run: npm install
 
       # Generate the static Hexo site
       - name: Generate Hexo site
@@ -67,8 +73,10 @@ jobs:
       # Stop the Hexo server after Playwright tests
       - name: Stop Hexo server
         if: always()
-        run: kill $(cat hexo.pid)
+        run: |
+          if [ -f hexo.pid ]; then kill $(cat hexo.pid); fi  # Check if hexo.pid exists
 
+  # Deployment step
   deploy:
     runs-on: ubuntu-latest
     needs: build-and-test
@@ -85,16 +93,14 @@ jobs:
         with:
           node-version: '20'  # Specify the Node.js version
 
-      # Clean Hexo cache and files
-      - name: Clean Hexo cache and files
-        run: npx hexo clean
-
-      # Install dependencies for Hexo
-      - name: Install dependencies
-        run: npm install
+      # Clean and install dependencies for Hexo
+      - name: Clean and Install Dependencies for Deployment
+        run: |
+          rm -rf node_modules  # Remove existing node_modules to avoid conflicts
+          npm install --force  # Force install all dependencies
 
       # Generate the static Hexo site for deployment
-      - name: Generate Hexo site
+      - name: Generate Hexo site for deployment
         run: npx hexo generate
 
       # Deploy to GitHub Pages
