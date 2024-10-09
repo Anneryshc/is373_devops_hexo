@@ -3,46 +3,67 @@ name: Test and Deploy Hexo Site
 on:
   push:
     branches:
-      - main
+      - main  # Trigger on push to the main branch
   pull_request:
     branches:
-      - main
+      - main  # Trigger on pull request to the main branch
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Hexo Repository
-        uses: actions/checkout@v3
+      # Checkout the Hexo website repository
+      - name: Checkout Hexo repository
+        uses: actions/checkout@v4
 
-      - name: Set Up Node.js
-        uses: actions/setup-node@v3
+      # Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'  # Usa la versión de Node.js que necesitas
+          node-version: '20'  # Specify the Node.js version
 
-      - name: Install Hexo and Dependencies
+      # Install dependencies for Hexo
+      - name: Install dependencies
+        run: npm ci
+
+      # Generate the static Hexo site
+      - name: Generate Hexo site
+        run: npx hexo generate
+
+      # Start the Hexo server in the background
+      - name: Start Hexo server
         run: |
-          npm install -g hexo-cli
-          npm install
+          npx hexo server &
+          echo $! > hexo.pid
 
-      - name: Generate Hexo Site
-        run: hexo generate
+      # Wait for the Hexo server to be ready
+      - name: Wait for Hexo server to start
+        run: npx wait-on http://localhost:4000
 
+      # Clone Playwright test repository
       - name: Clone Playwright Test Repository
         run: |
           git clone https://github.com/jar285/is373_devops.git
           cd is373_devops/tests
           npm install
 
-      # Instala los navegadores de Playwright
-      - name: Install Playwright Browsers
-        run: npx playwright install
+      # Install Playwright browsers
+      - name: Install Playwright browsers
+        run: |
+          cd is373_devops/tests
+          npx playwright install --with-deps
 
+      # Execute Playwright tests
       - name: Execute Playwright Tests
         run: |
           cd is373_devops/tests
           npx playwright test --config=../playwright.config.js
+
+      # Stop the Hexo server after Playwright tests
+      - name: Stop Hexo server
+        if: always()
+        run: kill $(cat hexo.pid)
 
   deploy:
     runs-on: ubuntu-latest
@@ -50,25 +71,27 @@ jobs:
     if: github.event_name == 'push'
 
     steps:
-      - name: Checkout Hexo Repository
-        uses: actions/checkout@v3
+      # Checkout the Hexo website repository
+      - name: Checkout Hexo repository
+        uses: actions/checkout@v4
 
-      - name: Set Up Node.js for Deployment
-        uses: actions/setup-node@v3
+      # Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: '21'
+          node-version: '20'  # Specify the Node.js version
 
-      - name: Install Hexo and Dependencies for Deployment
-        run: |
-          npm install -g hexo-cli
-          npm install
+      # Install dependencies for Hexo
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Regenerate Hexo Site
-        run: hexo generate
+      # Generate the static Hexo site for deployment
+      - name: Generate Hexo site
+        run: npx hexo generate
 
-
+      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./public  # Hexo outputs the generated files to the 'public' directory
