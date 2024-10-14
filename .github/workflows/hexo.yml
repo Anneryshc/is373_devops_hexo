@@ -54,7 +54,7 @@ jobs:
           cd is373_devops/tests
           npx playwright install --with-deps
 
-      # Execute Playwright tests on generated files
+      # Execute Playwright tests
       - name: Execute Playwright Tests
         run: |
           cd is373_devops/tests
