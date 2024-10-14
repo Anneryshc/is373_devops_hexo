@@ -103,6 +103,10 @@ jobs:
       - name: Generate Hexo site for deployment
         run: npx hexo generate
 
+      # Disable Jekyll by creating a .nojekyll file
+      - name: Disable Jekyll
+        run: touch ./public/.nojekyll
+
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
