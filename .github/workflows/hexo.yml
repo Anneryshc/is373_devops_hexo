@@ -41,16 +41,6 @@ jobs:
       - name: Generate Hexo site
         run: npx hexo generate
 
-      # Start the Hexo server in the background
-      - name: Start Hexo server
-        run: |
-          npx hexo server &
-          echo $! > hexo.pid
-
-      # Wait for the Hexo server to be ready
-      - name: Wait for Hexo server to start
-        run: npx wait-on http://localhost:4000
-
       # Clone Playwright test repository
       - name: Clone Playwright Test Repository
         run: |
@@ -64,17 +54,11 @@ jobs:
           cd is373_devops/tests
           npx playwright install --with-deps
 
-      # Execute Playwright tests
+      # Execute Playwright tests on generated files
       - name: Execute Playwright Tests
         run: |
           cd is373_devops/tests
           npx playwright test --config=../playwright.config.js
-
-      # Stop the Hexo server after Playwright tests
-      - name: Stop Hexo server
-        if: always()
-        run: |
-          if [ -f hexo.pid ]; then kill $(cat hexo.pid); fi  # Check if hexo.pid exists
 
   # Deployment step
   deploy:
