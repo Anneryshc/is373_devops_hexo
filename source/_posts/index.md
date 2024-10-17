@@ -44,7 +44,7 @@ Explore our comprehensive guides and resources that will help you understand key
 
 ---
 
-### [⚙️ Orchestration and Container Management](http://localhost:4000/is373_devops_hexo/Orchestration-and-Container-Management/)
+### [⚙️ Orchestration and Container Management](https://anneryshc.github.io/is373_devops_hexo/Orchestration-and-Container-Management/)
 🔄 **Management Tips**: Best practices for orchestrating containers and managing distributed systems.
 
 <img src="https://ecm.capitalone.com/WCM/tech/header-what-is-container-orchestration.jpg" alt=" Orchestration and Container Management" width="300"/>
