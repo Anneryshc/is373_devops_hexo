@@ -77,7 +77,7 @@ Explore our comprehensive guides and resources that will help you understand key
 
 ---
 
-### [📝 Glossary](http://localhost:4000/is373_devops_hexo/Glossary/)
+### [📝 Glossary](https://anneryshc.github.io/is373_devops_hexo/Glossary/)
 📖 **Technical Terms**: A glossary of the key technical terms used in this project for quick reference.
 
 ---
