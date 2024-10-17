@@ -30,7 +30,7 @@ Explore our comprehensive guides and resources that will help you understand key
 
 ---
 
-### [📦 Kubernetes vs Docker](http://localhost:4000/is373_devops_hexo/Kubernetes-vs-Docker/)
+### [📦 Kubernetes vs Docker](https://anneryshc.github.io/is373_devops_hexo/Kubernetes-vs-Docker/)
 🛠️ **Orchestration Showdown**: Compare Kubernetes and Docker for orchestrating containers.
 
 <img src="https://i.morioh.com/bceff364dd.png" alt="Kubernetes vs Docker" width="400"/>

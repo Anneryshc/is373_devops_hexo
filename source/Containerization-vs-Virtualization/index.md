@@ -2,7 +2,7 @@
 title:
 date: 2024-10-01 10:29:41
 ---
-# # [🏠](https://anneryshc.github.io/is373_devops_hexo/)
+# [🏠](https://anneryshc.github.io/is373_devops_hexo/)
 ## Containerization vs Virtualization
 <table>
   <thead>
