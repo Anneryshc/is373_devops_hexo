@@ -3,7 +3,9 @@ title: Docker Setup
 date: 2024-10-01 09:59:05
 ---
 
-## [What is Docker?](https://anneryshc.github.io/is373_devops_hexo/)
+# [🏠](https://anneryshc.github.io/is373_devops_hexo/)
+
+## What is Docker?
 
 - **Docker** is a platform that allows developers to create, deploy, and run applications inside lightweight, portable containers. **Containers** package an application with all its dependencies, ensuring it runs consistently across different environments.
 

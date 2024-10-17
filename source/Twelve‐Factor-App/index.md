@@ -2,6 +2,10 @@
 title: Twelve Factor App
 date: 2024-10-01 10:52:58
 ---
+
+# [🏠](https://anneryshc.github.io/is373_devops_hexo/)
+
+
 The Twelve-Factor App methodology is a set of best practices for building modern, cloud-native applications. Created by Adam Wiggins, it is widely regarded as a standard for developing scalable, reliable, and maintainable software applications. In this article, I will introduce you to the twelve factors that are essential for building an effective cloud-native application. Additionally, this methodology is specifically designed for SaaS applications and utilizes declarative formats for configuration automation, which minimizes the time and cost associated with onboarding new developers to the project.
 
 ![image](https://github.com/user-attachments/assets/b6368f23-64ec-4e26-96e5-ea1b8b4b17d6)

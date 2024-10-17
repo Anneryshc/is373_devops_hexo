@@ -2,7 +2,9 @@
 title: DevOps-Journey
 ---
 ## 🚀 About the Project
+
 Welcome to **DevOps-Journey**, where we blend innovative software development practices with the exciting world of DevOps. This project delves into advanced concepts like containerization, continuous integration, deployment automation, and scalable systems, offering a technical yet engaging perspective.
+
 ---
 
 ## 📄 Documentation
