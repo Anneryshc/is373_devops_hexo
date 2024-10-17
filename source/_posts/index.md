@@ -44,14 +44,14 @@ Explore our comprehensive guides and resources that will help you understand key
 
 ---
 
-### [⚙️ Orchestration and Container Management](http://localhost:4000/is373_devops_hexo/Orchestration-and-Container-Management/)
+### [⚙️ Orchestration and Container Management](https://anneryshc.github.io/is373_devops_hexo/Orchestration-and-Container-Management/)
 🔄 **Management Tips**: Best practices for orchestrating containers and managing distributed systems.
 
 <img src="https://ecm.capitalone.com/WCM/tech/header-what-is-container-orchestration.jpg" alt=" Orchestration and Container Management" width="300"/>
 
 ---
 
-### [📜 The Twelve-Factor App](http://localhost:4000/is373_devops_hexo/Twelve‐Factor-App/)
+### [📜 The Twelve-Factor App](https://anneryshc.github.io/is373_devops_hexo/Twelve‐Factor-App/)
 📖 **Best Practices**: Learn about the Twelve-Factor methodology for building scalable and maintainable apps.
 
 <img src="https://www.netsolutions.com/insights/wp-content/uploads/2021/02/what-is-the-12-factor-app-methodology.jpg" alt="12 Factor App" width="400"/>
