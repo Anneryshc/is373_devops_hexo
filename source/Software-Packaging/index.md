@@ -2,6 +2,9 @@
 title: Software Packaging
 date: 2024-10-01 10:54:54
 ---
+
+# [🏠](https://anneryshc.github.io/is373_devops_hexo/)
+
 ## What is a Software Package?
 A software package is a bundled collection of computer programs, files, and other necessary resources, grouped together for distribution and installation. It ensures the seamless functioning of an application on the user’s system. Common examples include executable binaries, libraries, configuration files, documentation, and other assets vital for the software's operation. Independent Software Vendors (ISVs) worldwide rely on effective software packaging.
 
