@@ -1,7 +1,10 @@
 ---
-title: Orchestration and Container Management
+title:
 date: 2024-10-01 10:50:59
 ---
+
+# [🏠](https://anneryshc.github.io/is373_devops_hexo/)
+
 ## What is Orchestration?
 
 Orchestration in the context of IT and cloud computing refers to the automated configuration, coordination, and management of systems, services, and applications. Its primary purpose is to streamline and automate complex workflows, allowing various interconnected components to work together efficiently. Orchestration ensures that processes that might require multiple tasks, resources, or systems, such as provisioning servers, managing virtual machines, or running containerized applications, are automatically handled without the need for manual intervention.
