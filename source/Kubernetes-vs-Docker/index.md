@@ -1,7 +1,10 @@
 ---
-title: Kubernetes vs Docker
+title:
 date: 2024-10-01 10:43:41
 ---
+
+# [🏠](https://anneryshc.github.io/is373_devops_hexo/)
+## Kubernetes vs Docker
 <table>
   <thead>
     <tr>
