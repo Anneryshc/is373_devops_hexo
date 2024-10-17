@@ -65,7 +65,7 @@ Explore our comprehensive guides and resources that will help you understand key
 
 ---
 
-### [🖥️ History of Virtualization](http://localhost:4000/is373_devops_hexo/History-of-Virtualization/)
+### [🖥️ History of Virtualization](https://anneryshc.github.io/is373_devops_hexo/History-of-Virtualization/)
 🛠️ **Evolution of Virtualization**: Learn how virtualization has evolved and shaped modern computing.
 
 <img src="https://static.vecteezy.com/system/resources/previews/005/550/142/non_2x/futuristic-sci-fi-glowing-hud-clock-abstract-time-machine-and-polygon-hi-tech-background-data-computer-of-head-up-display-interface-virtual-reality-technology-timer-deadline-concept-vector.jpg" alt="Virtualization History" width="400"/>
