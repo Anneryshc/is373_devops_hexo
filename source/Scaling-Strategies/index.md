@@ -1,7 +1,10 @@
 ---
-title: Scaling-Strategies
+title:
 date: 2024-10-01 10:46:19
 ---
+
+
+# [🏠](https://anneryshc.github.io/is373_devops_hexo/)
 ## Scaling Strategies: Horizontal Scaling vs. Vertical Scaling
 
 - Scaling is the process of adjusting system capacity to handle increasing or decreasing workloads. There are two main strategies: Horizontal Scaling and Vertical Scaling. Each approach has its strengths and is suitable for different scenarios.
