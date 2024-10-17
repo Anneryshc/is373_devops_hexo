@@ -3,6 +3,8 @@ title: History of Virtualization
 date: 2024-10-01 10:57:08
 ---
 
+# [🏠](https://anneryshc.github.io/is373_devops_hexo/)
+
 Virtualization is a technology that allows multiple virtual instances of operating systems or applications to run on a single physical machine. Over the decades, it has transformed from a niche concept into a cornerstone of modern IT infrastructure. Below is an overview of its development, highlighting key milestones from its origins to its impact on today's data centers.
 
 ## 1. Early Beginnings (1960s-1970s)
