@@ -1,8 +1,10 @@
 ---
-title: Key-Concepts
+title: 
 date: 2024-10-01 10:27:24
 ---
-## What is a Kernel?
+# [🏠](https://anneryshc.github.io/is373_devops_hexo/)
+
+## What is a Kernel? 
 The **Kernel** is the core component of an operating system that manages system resources and allows software applications to interact with hardware. It bridges the hardware (like CPU, memory, and devices) and the software applications running on a computer.
 
 - **Responsibilities**: The kernel handles essential tasks like process management, memory management, device drivers, and system calls.
