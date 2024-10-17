@@ -72,7 +72,7 @@ Explore our comprehensive guides and resources that will help you understand key
 
 ---
 
-### [📚 Resources](http://localhost:4000/is373_devops_hexo/Resources/)
+### [📚 Resources](https://anneryshc.github.io/is373_devops_hexo/Resources/)
 🔗 **Useful Links**: A list of resources and references to support the project.
 
 ---
