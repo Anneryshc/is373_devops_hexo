@@ -2,6 +2,9 @@
 title: Glossary
 date: 2024-10-01 11:00:55
 ---
+
+# [🏠](https://anneryshc.github.io/is373_devops_hexo/)
+
 *  This glossary contains key terms and concepts related to containerization, virtualization, and related technologies used throughout the project. The terms are listed alphabetically for easy reference.
 
 ## Containerization 
