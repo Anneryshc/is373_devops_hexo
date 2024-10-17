@@ -51,7 +51,7 @@ Explore our comprehensive guides and resources that will help you understand key
 
 ---
 
-### [📜 The Twelve-Factor App](http://localhost:4000/is373_devops_hexo/Twelve‐Factor-App/)
+### [📜 The Twelve-Factor App](https://anneryshc.github.io/is373_devops_hexo/Twelve‐Factor-App/)
 📖 **Best Practices**: Learn about the Twelve-Factor methodology for building scalable and maintainable apps.
 
 <img src="https://www.netsolutions.com/insights/wp-content/uploads/2021/02/what-is-the-12-factor-app-methodology.jpg" alt="12 Factor App" width="400"/>
