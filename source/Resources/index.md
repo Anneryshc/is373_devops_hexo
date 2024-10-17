@@ -3,6 +3,8 @@ title: Resources
 date: 2024-10-01 10:59:03
 ---
 
+# [🏠](https://anneryshc.github.io/is373_devops_hexo/)
+
 Below are the sources consulted on topics such as virtualization, containers, orchestration, and scalability. These references provide a comprehensive guide to the technologies discussed.
 
 ---
