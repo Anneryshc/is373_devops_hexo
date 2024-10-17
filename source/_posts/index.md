@@ -58,7 +58,7 @@ Explore our comprehensive guides and resources that will help you understand key
 
 ---
 
-### [📦 Software Packaging](http://localhost:4000/is373_devops_hexo/Software-Packaging/)
+### [📦 Software Packaging](https://anneryshc.github.io/is373_devops_hexo/Software-Packaging/)
 📥 **Efficient Packaging**: Techniques for effective software packaging and deployment.
 
 <img src="https://png.pngtree.com/png-clipart/20220823/original/pngtree-packaged-software-abstract-concept-vector-illustration-png-image_8459429.png"  alt="Software Packaging" width="300"/>
