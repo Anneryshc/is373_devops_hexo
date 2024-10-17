@@ -9,7 +9,7 @@ Welcome to **DevOps-Journey**, where we blend innovative software development pr
 
 Explore our comprehensive guides and resources that will help you understand key concepts and best practices in software development. From Docker setup to scaling strategies, our documentation is designed to provide clear and concise information that supports our project:
 
-### [🐳 Docker Setup Guide](http://localhost:4000/is373_devops_hexo/Docker/)
+### [🐳 Docker Setup Guide](https://anneryshc.github.io/is373_devops_hexo/Docker/)
 🚀 **Quick Setup**: Learn how to set up and configure Docker for this project, simplifying deployment with containers.
 
 <img src="https://codesphere.ghost.io/content/images/2022/03/Getting-started-with-Docker.png" alt="Docker" width="400"/>
