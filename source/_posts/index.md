@@ -37,7 +37,7 @@ Explore our comprehensive guides and resources that will help you understand key
 
 ---
 
-### [📈 Scaling Strategies](http://localhost:4000/is373_devops_hexo/Scaling-Strategies/)
+### [📈 Scaling Strategies](https://anneryshc.github.io/is373_devops_hexo/Scaling-Strategies/)
 📊 **Scale Your System**: Explore strategies for both horizontal and vertical scaling to meet system demands.
 
 <img src="https://www.nops.io/wp-content/uploads/2022/12/Horizontal-vs-vertical-scaling-Which-one-to-choose-1024x536.jpg" alt="Scaling Strategies" width="400"/>
