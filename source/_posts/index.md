@@ -23,7 +23,7 @@ Explore our comprehensive guides and resources that will help you understand key
 
 ---
 
-### [🔗 Containerization vs Virtualization](http://localhost:4000/is373_devops_hexo/Containerization-vs-Virtualization/)
+### [🔗 Containerization vs Virtualization](https://anneryshc.github.io/is373_devops_hexo/Containerization-vs-Virtualization/)
 🌐 **Comparison**: Dive into the differences and use cases for containerization and virtualization.
 
 <img src="https://www.techwrix.com/wp-content/uploads/2023/06/Virtualization-vs-Containerization-techwrix-jpg.webp" alt="Containerization vs Virtualization" width="400"/>
