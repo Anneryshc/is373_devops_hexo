@@ -16,7 +16,7 @@ Explore our comprehensive guides and resources that will help you understand key
 
 ---
 
-### [💡 Key Concepts](http://localhost:4000/is373_devops_hexo/Key-Concepts/)
+### [💡 Key Concepts](https://anneryshc.github.io/is373_devops_hexo/Key-Concepts/)
 📚 **Foundations**: Understand core technologies like operating system kernels, threading, and parallelization.
 
 <img src="https://www.includehelp.com/operating-systems/images/kernel.jpg" alt="Kernel Concept" width="400"/>
